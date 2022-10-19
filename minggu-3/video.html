@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>HTML 5 - Multimedia</title>
+</head>
+<body>
+  <h2>Video - HTML 5</h2>
+  <section>
+    <button type="button" onclick="playVideo()">play Video</button>
+    <button type="button" onclick="pauseVideo()">pause Video</button>
+    <button type="button" onclick="duration()">duration</button>
+    <button type="button" onclick="controlOn()">Control ON</button>
+    <button type="button" onclick="controlOff()">Control Off</button>
+  </section>
+    <video width="420" id="myVvideo">
+        <source src="Genshin Impact Venti Character Demo (English Voice Over) Trailer.mp4" type="video/mp4">
+        file not support
+    </video>
+</body>
+<script>
+  Var Vid = document.getElementById("MyVideo");
+  function playVideo() {
+    vid.play();
+    vid.loop = true;
+  };
+  function pauseVideo() {
+    vid.pause();
+  };
+  function duration() {
+    alert(vid.duration);
+  };
+  function controlOn() {
+    vid.controlOn = true;
+    vid.load()
+  };
+  function controlOff() {
+    vid.controlOff = false;
+    vid.load();
+  };
+   
+</script>
+</html>
